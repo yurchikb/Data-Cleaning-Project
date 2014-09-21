@@ -3,11 +3,35 @@ Data-Cleaning-Project
 
 Project for Coursera Course: Getting and Cleaning Data
 
-This depository contains the R-script stored as run_analysis.R file and the script output stored in tidy_file.txt.
+The purpose of this project is to to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.  The input data for this project represent data collected from the accelerometers from the Samsung Galaxy S smartphone.
+
+This depository contains the R-script run_analysis.R file, CodeBook file describing data format, and the script output file tidy_file.txt.
+
+
+R-Script Processing Summary
+============================
+The following is the summary of the five processing steps. For more details refer to the script run_analysis.R.
+
+Step 0. Downloads and unzips the raw input data file
+  - Download the zip file with raw input data via the link  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+  - Unzips the file into work directory.
+Step 1. Merges the training and the test sets to create one data set.
+  - Read training measurements from X_train.txt and test measurements from X_test.txt and merge them together into merged_data data frame.
+Step 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+  - Extracts only columns in merged_data that have names containing mean() and std() and put results into selected_data frame.
+Step 3. Uses descriptive activity names to name the activities in the data set
+  - Attaches activity number (from y_train.txt and y_test.txt) as the first column and subject number (from subject_train.txt and subject_test.txt) as the second column to selected_data frame. 
+  - Replaces activity numbers in the first column of selected_data frame with activity names (from activity_labels.txt file).
+Step 4. Appropriately labels the data set with descriptive variable names.
+  - Enhances variable names (i.e., colnames) in selected_data frame by removing parenthesis, replacing leading "f" with "Freq-" and leading "t" with "Time-".
+Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+  - Uses function melt() to transform selected_data frame to narrow form (melted_data frame)
+  - Uses function dcast to calculate means and tranform melted data frame to tidy format (tidy_df frame)
+  - Writes results from tidy_df frame to tidy_df.txt file (part of this depository)
 
 RAW INPUT DATA
 ===========
-One of the most exciting areas in all of data science right now is wearable computing. Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The input data for this project represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
+A full description is available at the site where the data was obtained: 
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
@@ -45,24 +69,6 @@ The output file is tidy because it satisfies the following tidy file criterias:
 2. Each different observation of that variable should be in a different row
   -The mean value of the variable for each selected variable for a given activity&subject combination stored in a different row
 
-R-Script Processing Summary
-============================
-The following is the summary of the five processing steps. For more details refer to the script run_analysis.R.
 
-Step 0. Downloads and unzips the raw input data file
-  - Download the zip file with raw input data via the link  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
-  - Unzips the file, read and process raw input data, and write results in the output file tidy_file.txt (part of this depository).
-Step 1. Merges the training and the test sets to create one data set.
-  - Read training measurements from ?????, test measurements from ???? and merge them together in ???? data frame.
-Step 2. Extracts only the measurements on the mean and standard deviation for each measurement.
-  - Extracts only columns in ????? that have names containing mean() and std() and put results into ??????
-Step 3. Uses descriptive activity names to name the activities in the data set
-  - Attaches activity number ??? and subject number ???? to ???? frame. Replaces zctivity numbers with activity names ?????
-Step 4. Appropriately labels the data set with descriptive variable names.
-  - Enhances variable names by removing parenthesis, replacing leading "f" with "Freq-" and leading "t" with "Time-".
-Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-  - Uses ???? to create narrow form 
-  - Uses ???? to calculate means and tranform to tidy format
-  - Writes results into tidy_df.txt
   
 
