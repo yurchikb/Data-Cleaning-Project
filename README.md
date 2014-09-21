@@ -5,7 +5,7 @@ Project for Coursera Course: Getting and Cleaning Data
 
 The purpose of this project is to to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.  The input data for this project represent data collected from the accelerometers from the Samsung Galaxy S smartphone.
 
-This depository contains script in the run_analysis.R file, CodeBook.md file describing data format, and the script output file tidy_file.txt.
+This depository contains script in the run_analysis.R file, CodeBook.md file describing data format, Readme.md file summarizing script processing, and script output file tidy_file.txt.
 
 
 R-Script Processing Summary
