@@ -45,9 +45,24 @@ The output file is tidy because it satisfies the following tidy file criterias:
 2. Each different observation of that variable should be in a different row
   -The mean value of the variable for each selected variable for a given activity&subject combination stored in a different row
 
-R-Script
-========
+R-Script Processing Summary
+============================
+The following is the summary of the five processing steps. For more details refer to the script run_analysis.R.
 
-First, run_analysis.R (part of this depository) downloads the zip file with raw input data via the link  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. It unzips the file, read and process raw input data, and write results in the output file tidy_file.txt (part of this depository).
+Step 0. Downloads and unzips the raw input data file
+  - Download the zip file with raw input data via the link  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+  - Unzips the file, read and process raw input data, and write results in the output file tidy_file.txt (part of this depository).
+Step 1. Merges the training and the test sets to create one data set.
+  - Read training measurements from ?????, test measurements from ???? and merge them together in ???? data frame.
+Step 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+  - Extracts only columns in ????? that have names containing mean() and std() and put results into ??????
+Step 3. Uses descriptive activity names to name the activities in the data set
+  - Attaches activity number ??? and subject number ???? to ???? frame. Replaces zctivity numbers with activity names ?????
+Step 4. Appropriately labels the data set with descriptive variable names.
+  - Enhances variable names by removing parenthesis, replacing leading "f" with "Freq-" and leading "t" with "Time-".
+Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+  - Uses ???? to create narrow form 
+  - Uses ???? to calculate means and tranform to tidy format
+  - Writes results into tidy_df.txt
+  
 
-Refer to the file CodeBook.md in this depository for more detail.
