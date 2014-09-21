@@ -19,7 +19,7 @@ The description of the raw data can be found in the unzipped files:
 
 - './activity_labels.txt': Links the class labels with their activity name.
 
-The raw train and test results were read from two identically formatted files: './train/X_train.txt' and '/test/X_test.txt". Each file contains 561 variables for different aspects of acceleration and velocity measured during the experiment involving 30 subjects and 6 activities. Variable names for columns for both train and test data files can be found in file './features.txt' with description of variables in './features_info.txt'. 
+The raw train and test results were read from two identically formatted files: './train/X_train.txt' and '/test/X_test.txt". Each file contains 561 variables for different aspects of acceleration and velocity measured during the experiment involving 30 subjects engaged in 6 activities. Variable names for columns for both train and test data files can be found in file './features.txt' with description of variables in './features_info.txt'. 
 
 Activity number for each experiment (i.e., a line/row in X_train.txt and X_test.txt files) was obtained from './train/y_train.txt' and './test/y_test.txt' respectively. Data range is from 1 to 6. 
 Subject number for each experiment was read from './train/subject_train.txt' and './test/subject-test.txt' respectively. Data range is from 1 to 30.
