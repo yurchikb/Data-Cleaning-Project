@@ -33,6 +33,7 @@ For the description of the raw input data variables and their units refer to the
 There are 2 features and 66 variables (68 columns total) in the output tidy file tidy_file.txt. The names for features and variables are presented below
 
 colnames(tidy_df)
+
  [1] "Activity"                      "Subject"                       "Time-BodyAcc-mean-X"          
  [4] "Time-BodyAcc-mean-Y"           "Time-BodyAcc-mean-Z"           "Time-BodyAcc-std-X"           
  [7] "Time-BodyAcc-std-Y"            "Time-BodyAcc-std-Z"            "Time-GravityAcc-mean-X"       
@@ -73,6 +74,7 @@ The following is the list of 66 initial names of input variables followed by the
 
 The list of variable names in raw data set are
 > selected_feature_names
+
  [1] "tBodyAcc-mean()-X"           "tBodyAcc-mean()-Y"           "tBodyAcc-mean()-Z"          
  [4] "tBodyAcc-std()-X"            "tBodyAcc-std()-Y"            "tBodyAcc-std()-Z"           
  [7] "tGravityAcc-mean()-X"        "tGravityAcc-mean()-Y"        "tGravityAcc-mean()-Z"       
@@ -99,6 +101,7 @@ The list of variable names in raw data set are
 The list of respective variable names in the output file tidy_file.txt are
 
 > colnames(tidy_df)[-2:-1]
+
  [1] "Time-BodyAcc-mean-X"           "Time-BodyAcc-mean-Y"           "Time-BodyAcc-mean-Z"          
  [4] "Time-BodyAcc-std-X"            "Time-BodyAcc-std-Y"            "Time-BodyAcc-std-Z"           
  [7] "Time-GravityAcc-mean-X"        "Time-GravityAcc-mean-Y"        "Time-GravityAcc-mean-Z"       
