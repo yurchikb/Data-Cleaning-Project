@@ -30,8 +30,8 @@ Step 4. Appropriately labels the data set with descriptive variable names.
   - Enhances variable names (i.e., colnames) in selected_data frame by removing parenthesis, replacing leading "f" with "Freq-" and leading "t" with "Time-".
 
 Step 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-  - Uses function melt() to reshape selected_data frame to the narrow form (melted_data frame)
-  - Uses function dcast to calculate means and reshapes melted_data frame to the tidy form (tidy_df frame)
+  - Uses function melt() to reshape selected_data frame to the "skinny" frame (melted_data frame)
+  - Uses function dcast to calculate means and reshape melted_data frame to the tidy form (tidy_df frame)
   - Writes results from tidy_df frame to tidy_df.txt file (part of this depository)
 
 RAW INPUT DATA
