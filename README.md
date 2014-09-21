@@ -5,7 +5,7 @@ Project for Coursera Course: Getting and Cleaning Data
 
 The purpose of this project is to to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.  The input data for this project represent data collected from the accelerometers from the Samsung Galaxy S smartphone.
 
-This depository contains the R-script run_analysis.R file, CodeBook file describing data format, and the script output file tidy_file.txt.
+This depository contains script in the run_analysis.R file, CodeBook.md file describing data format, and the script output file tidy_file.txt.
 
 
 R-Script Processing Summary
@@ -40,7 +40,7 @@ A full description is available at the site where the data was obtained:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
-Here are the data for the project: 
+Here are the raw input data for this project: 
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
