@@ -70,11 +70,8 @@ The output file contains data in the tidy format. Refer to https://github.com/jt
 The output file is tidy because it satisfies the following tidy file criterias:
 
 1. Each variable you measure should be in one column
-  -There is a separate column for each of the 66 selected variables
+  - There is a separate column for each of the 66 selected variables.
 
 2. Each different observation of that variable should be in a different row
-  -The mean value of the variable for each selected variable for a given activity&subject combination stored in a different row
-
-
-  
+  - The mean value of the variable for each selected variable for a given activity&subject combination is stored in a different row.  
 
