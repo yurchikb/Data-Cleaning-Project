@@ -72,7 +72,7 @@ For example, variable name "tBodyAcc-mean()-X" in input data was transformed to 
 The following is the list of 66 initial names of input variables followed by the list of the 66 modified names of output variables.
 
 
-The list of variable names in raw input data are
+The list of variable names in raw input data that were changed by run.R scripts are
 > selected_feature_names
 
  [1] "tBodyAcc-mean()-X"           "tBodyAcc-mean()-Y"           "tBodyAcc-mean()-Z"          
